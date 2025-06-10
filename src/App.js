@@ -1,4 +1,5 @@
 import './App.css';
+import AddBudgetForm from './components/AddBudgetForm';
 import BudgetCard from './components/BudgetCard';
 
 export default function App() {
@@ -9,11 +10,15 @@ export default function App() {
 
   return(
     <div>
-      {budgets.map(({name, max}) => (
-        <div>
-          <BudgetCard key={name} name={name} max={max} />
-        </div>
-      ))}
+      <h3>Budget Tracker</h3>
+      <div className="app-container">
+        <AddBudgetForm />
+        {budgets.map(({name, max}) => (
+          <div>
+            <BudgetCard key={name} name={name} max={max} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
