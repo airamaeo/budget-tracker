@@ -1,0 +1,10 @@
+.budget-card {
+    display: grid;
+    place-items: center;
+    background-color: rgba(234, 228, 161, 0.818);
+    padding: 1rem;
+    border-radius: 12px;
+    margin: 1rem auto;
+    max-width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
