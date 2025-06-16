@@ -11,11 +11,11 @@ export default function BudgetCard ({name, max, expenses}) {
 
     return (
         <div className="budget-card">
-            <h3>{name}</h3>
+            <h2>{name}</h2>
             <div className="budget-info">
-                <p>Max: <span>€{max}</span> </p>
-                <p>Total Expense: <span>€{total}</span> </p>
-                <p>Budget Remaining: <span>€{remBudget}</span> </p>
+                <h3>Budget Amount: <span>€{max}</span> </h3>
+                <h3>Total Expenses: <span>€{total}</span> </h3>
+                <h3>Budget Remaining: <span>€{remBudget}</span> </h3>
             </div>
         </div>
     );
