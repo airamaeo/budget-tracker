@@ -1,5 +1,6 @@
 import './App.css';
 import AddBudgetForm from './components/AddBudgetForm';
+import AddExpenseForm from './components/AddExpenseForm';
 import BudgetCard from './components/BudgetCard';
 
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
           </div>
           );
         })}
+        <AddExpenseForm />
       </div>
     </div>
   );
